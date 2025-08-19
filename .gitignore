@@ -1,0 +1,5 @@
+**/.env
+**/.env.*
+**/email.txt
+**/creds_logs.json
+**/node_modules

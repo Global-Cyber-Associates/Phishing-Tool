@@ -1,0 +1,18 @@
+.emailPreview {
+  background-color: #1b263b; /* Darker base for modern look */
+  color: #a8dadc;            /* Soft text color */
+  border: 1px solid #457b9d; /* Subtle border */
+  padding: 12px 18px;        /* More spacious padding */
+  border-radius: 10px;       /* Rounded corners */
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Soft shadow */
+}
+
+.emailPreview:hover {
+  background-color: #0077b6; /* Accent on hover */
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
+}

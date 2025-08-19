@@ -1,0 +1,175 @@
+/* settings.css */
+
+.upload-send-wrapper {
+  display: flex;
+  height: 90vh;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 20px;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  background-color: #f5f6fa;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.left-panel h2 {
+  margin-bottom: 15px;
+  color: #2f3640;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #dcdde1;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #40739e;
+  box-shadow: 0 0 5px rgba(64, 115, 158, 0.3);
+}
+
+.btn-primary {
+  background-color: #40739e;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.btn-primary:disabled {
+  background-color: #7f8fa6;
+  cursor: not-allowed;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2f3640;
+}
+
+/* File preview */
+.preview-box {
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.preview-box h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #2f3640;
+}
+
+.preview-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.preview-list li {
+  padding: 4px 0;
+  border-bottom: 1px solid #f1f2f6;
+  font-size: 13px;
+  color: #353b48;
+}
+
+/* Status message */
+.status-msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #e84118;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1.2;
+  background-color: #f5f6fa;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.right-panel h2 {
+  margin-bottom: 15px;
+  color: #2f3640;
+}
+
+.emails-list {
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #dcdde1;
+  padding: 10px;
+}
+
+.emails-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emails-list li {
+  padding: 6px 8px;
+  border-bottom: 1px solid #f1f2f6;
+  font-size: 14px;
+  color: #353b48;
+}
+
+/* Scrollbar styling */
+.left-panel::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar,
+.preview-box::-webkit-scrollbar,
+.emails-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left-panel::-webkit-scrollbar-thumb,
+.right-panel::-webkit-scrollbar-thumb,
+.preview-box::-webkit-scrollbar-thumb,
+.emails-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.left-panel::-webkit-scrollbar-track,
+.right-panel::-webkit-scrollbar-track,
+.preview-box::-webkit-scrollbar-track,
+.emails-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .upload-send-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: unset;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
