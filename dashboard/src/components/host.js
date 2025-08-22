@@ -1,5 +1,5 @@
 const host = {
-    url: 'http:/yourbackendip:3000'
+    url: 'http:/http://10.100.75.206:3000'
     // url : 'http://localhost:3000'
 }
 

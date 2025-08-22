@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const upload = multer({ storage: multer.memoryStorage() });
 
 app.use(cors({
-    origin: ['http://192.168.1.15:5173'],
+    origin: ['http://10.100.75.206:5173'],
     methods: ['GET', 'POST', 'DELETE'],
     credentials: true
 }));
